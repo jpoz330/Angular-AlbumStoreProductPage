@@ -11,7 +11,6 @@ import { ProductTracklistingComponent } from './product-tracklisting/product-tra
 import { ProductListComponent } from './product-list/product-list.component';
 
 import { RouterModule, Routes } from '@angular/router';
-
 const appRoutes: Routes = [
   { path: 'products', component: ProductListComponent },
   { path: 'product/:id', component: ProductPageComponent },
@@ -24,7 +23,7 @@ const appRoutes: Routes = [
     ProductPageComponent,
     ProductDescriptionComponent,
     ProductTracklistingComponent,
-    ProductListComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
@@ -34,5 +33,6 @@ const appRoutes: Routes = [
   ],
   providers: [ProductService],
   bootstrap: [AppComponent]
-});
+})
+
 export class AppModule { }
